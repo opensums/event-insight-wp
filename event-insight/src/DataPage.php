@@ -23,7 +23,18 @@ class DataPage extends AdminPage {
         [ 'style', 'wp-jquery-ui-dialog' ],
         [ 'style', 'tabulator-css', 'tabulator.min.css' ],
         [ 'script', 'tabulator', 'tabulator.min.js' ],
-        [ 'script', 'event-insight', 'event-insight-wp.min.js', [ 'jquery', 'jquery-ui-dialog' ] ],
+        [
+            'script',
+            'event-insight',
+            'event-insight-wp.min.js',
+            [
+                'jquery',
+                // Dialog box used for error notifications.
+                'jquery-ui-dialog',
+                // Make sure wpApiSettings is loaded.
+                'wp-api-request',
+            ],
+        ],
     ];
 
     // protected $capability = 'event_insight_view_data';
