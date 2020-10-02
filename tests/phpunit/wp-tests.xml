@@ -1,0 +1,14 @@
+<phpunit
+  bootstrap="../wp-test/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+>
+  <testsuites>
+    <testsuite name="WP Integration Tests">
+      <directory>../wp-test/</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

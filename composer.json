@@ -1,0 +1,28 @@
+{
+    "name": "opensums/event-insight-wp",
+    "description": "Event Insight consolidator plugin for WordPress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul OpenSums",
+            "email": "paul@opensums.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EventInsight\\": "event-insight/src"
+        }
+    },
+    "scripts": {
+        "install-dev": "bash bin/install-dev.sh",
+        "unit-tests": "tests/phpunit/phpunit -c tests/phpunit/unit-tests.xml",
+        "wp-multisite-tests": "tests/phpunit/phpunit -c tests/phpunit/wp-multisite-tests.xml",
+        "wp-tests": "tests/phpunit/phpunit -c tests/phpunit/wp-tests.xml"
+    },
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "10up/wp_mock": "^0.4.2"
+    }
+}

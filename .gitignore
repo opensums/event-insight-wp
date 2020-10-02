@@ -1,0 +1,9 @@
+# .gitignore
+
+.env
+
+# Composer packages
+/vendor
+
+# Local PHPUnit
+/tests/phpunit/phpunit
