@@ -13,7 +13,11 @@ defined('ABSPATH') || exit;
 
 ?>
 
-<?php if ($id === 'intro'): ?>
+<?php if ($id === 'event-insight-secrets-ticket-tailor'): ?>
+
+Enter your
+<a target="_blank" href="https://www.tickettailor.com?fp_ref=opensums">Ticket Tailor</a>
+API Key to create a read-only link to your account.
 
 <?php else: ?>
 

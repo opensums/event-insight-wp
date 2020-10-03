@@ -66,9 +66,9 @@ Once the events are loaded, click on an event to load the tickets for that event
     </li>
 </ol>
 
-<p>Set the secret API key to link your
-<a href="https://www.tickettailor.com?fp_ref=opensums">TicketTailor</a>
-account on the Secrets settings page.</p>
+<p>Create a read-only link to your
+<a href="https://www.tickettailor.com?fp_ref=opensums">Ticket Tailor</a>
+account on the 'secrets' settings page.</p>
 
 <p><small>This is <?php echo $plugin['name'] ?> version
 <?php echo $plugin['version'] ?>.
