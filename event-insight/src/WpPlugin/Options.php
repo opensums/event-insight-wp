@@ -10,9 +10,9 @@
 
 declare(strict_types=1);
 
-namespace ApiData\WpPlugin;
+namespace EventInsight\WpPlugin;
 
-use ApiData\WpPlugin\Plugin;
+use EventInsight\WpPlugin\Plugin;
 
 /**
  * Abstraction for the wp_options API.

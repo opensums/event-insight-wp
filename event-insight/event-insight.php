@@ -11,7 +11,7 @@
  * Plugin Name:       Event Insight
  * Plugin URI:        http://github.com/opensums/event-insight-wp/
  * Description:       Integrate data from various APIs.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            OpenSums
  * Author URI:        https://opensums.com/
  * License:           MIT

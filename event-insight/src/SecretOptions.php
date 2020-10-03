@@ -18,5 +18,4 @@ class SecretOptions extends OptionsGroup {
     protected $keys = [
         'ticket-tailor-api-key' => [],
     ];
-
 }

@@ -26,7 +26,7 @@ class SecretsPage extends AdminPage {
 
     protected $pageTitle = 'Event Insight Secrets';
 
-    // protected $sectionsTemplate = 'admin/settings-page-sections';
+    protected $sectionsTemplate = 'admin/settings-page-sections';
     protected $template = 'admin/secrets-page';
 
     protected function getSections() {
@@ -38,8 +38,8 @@ class SecretsPage extends AdminPage {
             [
                 // This is prefixed and used as the key in the wp_options table.
                 'option' => 'secrets',
-                // Prefixed and used as the section element's id.
-                'id' => 'event-insight-settings',
+                // Used as the section element's id **without** prefixing.
+                'id' => 'event-insight-secrets-ticket-tailor',
                 'title' => __('Ticket Tailor settings', 'event-insight'),
                 'fields' => [
                     [
@@ -47,7 +47,7 @@ class SecretsPage extends AdminPage {
                         'key' => 'ticket-tailor-api-key',
                         'label' => __('API Key', 'event-insight'),
                         'placeholder' => __('API Key', 'event-insight'),
-                        'supplemental' => __('Create a key in the ticket tailor dashboard', 'event-insight'),
+                        'supplemental' => __('Create a key in the Ticket Tailor dashboard', 'event-insight'),
                         'size' => 48,
                     ],
                 ],

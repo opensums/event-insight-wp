@@ -156,6 +156,17 @@ abstract class AdminPage {
         ));
     }
 
+    /**
+     * $section is an array with keys `id`, `title` and `callback`.
+     *
+     * Invoked as a callback for each page section.
+     */
+    public function renderSection(array $section): void {
+        if ($this->sectionsTemplate === null) return;
+        $this->container->get('plugin')
+            ->render($this->sectionsTemplate, array_merge($this->templateVars, $section));
+    }
+
     // Protected methods ---------------------------------------------------------------------------
 
     protected function init() {}
@@ -329,13 +340,5 @@ abstract class AdminPage {
         if ($supplemental = $field['supplemental'] ?? null) {
             printf('<p class="description">%s</p>', $supplemental); // Show it
         }
-    }
-
-    /**
-     * $section is an array with keys `id`, `title` and `callback`.
-     */
-    public function renderSection($section) {
-        if ($this->sectionsTemplate === null) return;
-        $this->plugin->render($this->sectionsTemplate, array_merge($this->templateVars, $section));
     }
 }
