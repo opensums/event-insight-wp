@@ -28,7 +28,7 @@ class Plugin extends WpPlugin\Plugin {
     protected $slug = 'event-insight';
 
     /** @var string Current version. */
-    protected $version = '1.0.0';
+    protected $version = '1.0.1';
 
     /** @var string[] Admin page class names. */
     protected $adminPages = [
